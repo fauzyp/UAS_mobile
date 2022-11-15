@@ -44,7 +44,7 @@ class _CounterPageState extends State<CounterPage> {
                 height: 10,
               ),
               const Text(
-                'Berapa lama anda akan menginap ?',
+                'How many movie tickets are you going to buy?',
                 style: TextStyle(fontSize: 25, color: Colors.black),
                 textAlign: TextAlign.center,
               ),
@@ -69,7 +69,7 @@ class _CounterPageState extends State<CounterPage> {
                 ],
               ),
               CustomButton(
-                  text: 'Konfirmasi',
+                  text: 'Confirm',
                   onPressed: () {
                     Navigator.push(
                       context,

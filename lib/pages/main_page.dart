@@ -2,6 +2,9 @@ import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:uts/pages/account_page.dart';
 import 'package:uts/pages/counter_page.dart';
+import 'package:uts/pages/messages_page.dart';
+import 'package:uts/pages/movielist_pages.dart';
+import 'package:uts/pages/home_page.dart';
 
 
 class MainPage extends StatefulWidget {
@@ -29,10 +32,10 @@ class _MainPageState extends State<MainPage> {
           controller: _pageController,
           onPageChanged: (index) => setState(() => _currentIndex = index),
           children: [
-            Container (color: Color.fromARGB(255, 246, 246, 246)),
+            const HomePage(),
             const CounterPage(),
-            Container(color: Colors.green),
-            Container(color: Colors.brown),
+            const MovieListScreen(),
+            const MessagePage(),
             const AccountPage(),
           ],
         ),
@@ -55,13 +58,13 @@ class _MainPageState extends State<MainPage> {
           ),
           BottomNavyBarItem(
             icon: const Icon(Icons.format_list_numbered_rounded),
-            title: const Text('Booking Room'),
+            title: const Text('Buy Tickets'),
             activeColor: Colors.blue,
             textAlign: TextAlign.center,
           ),
           BottomNavyBarItem(
             icon: const Icon(Icons.feed),
-            title: const Text('Feed'),
+            title: const Text('List Movie'),
             activeColor: Colors.green,
             textAlign: TextAlign.center,
           ),
@@ -73,7 +76,7 @@ class _MainPageState extends State<MainPage> {
           ),
           BottomNavyBarItem(
             icon: const Icon(Icons.date_range),
-            title: const Text('Booking Date'),
+            title: const Text('Buy Date'),
             activeColor: Colors.purple,
             textAlign: TextAlign.center,
           ),

@@ -32,13 +32,13 @@ class _ResultPageState extends State<ResultPage> {
               height: 10,
             ),
             CustomButton(
-              text: 'Kembali',
+              text: 'Back',
               onPressed: () {
                 showDialog(
                   context: context,
                   builder: (context) => AlertDialog(
-                    title: const Text('Perhatian!!!'),
-                    content: const Text('Apakah anda yakin ingin kembali kehalaman sebelumnya ?'),
+                    title: const Text('Caution!!!'),
+                    content: const Text('Are you sure you want to return to the previous page?'),
                     actions: [
                       TextButton(
                         onPressed: () => Navigator.pop(context),
