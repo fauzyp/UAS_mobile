@@ -31,12 +31,12 @@ class _MainPageState extends State<MainPage> {
         child: PageView(
           controller: _pageController,
           onPageChanged: (index) => setState(() => _currentIndex = index),
-          children: [
-            const HomePage(),
-            const CounterPage(),
-            const MovieListScreen(),
-            const MessagePage(),
-            const AccountPage(),
+          children: const [
+            HomePage(),
+            CounterPage(),
+            MovieListScreen(),
+            MessagePage(),
+            AccountPage(),
           ],
         ),
       ),
@@ -53,7 +53,7 @@ class _MainPageState extends State<MainPage> {
           BottomNavyBarItem(
             icon: const Icon(Icons.apps),
             title: const Text('Home'),
-            activeColor: Color.fromARGB(255, 253, 0, 0),
+            activeColor: const Color.fromARGB(255, 253, 0, 0),
             textAlign: TextAlign.center,
           ),
           BottomNavyBarItem(

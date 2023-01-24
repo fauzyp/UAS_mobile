@@ -25,6 +25,7 @@ class _MovieListScreenState extends State<MovieListScreen> {
         });
       }
     } catch (e) {
+      // ignore: avoid_print
       print(e);
     }
   }
@@ -40,12 +41,12 @@ class _MovieListScreenState extends State<MovieListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("List Movie"),
+        title: const Text("List Movie"),
       ),
       body: ListView.builder(
         itemCount: _listdata.length,
         itemBuilder: ((context, index) {
-          return Card(
+          return const Card(
             child: ListTile(
               title: Text("data"),
             ),
