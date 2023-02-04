@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:uts/pages/account_page.dart';
 import 'package:uts/pages/counter_page.dart';
 import 'package:uts/pages/messages_page.dart';
-import 'package:uts/pages/movielist_pages.dart';
+import 'package:uts/pages/todo_list.dart';
 import 'package:uts/pages/home_page.dart';
 
 
@@ -34,7 +34,7 @@ class _MainPageState extends State<MainPage> {
           children: const [
             HomePage(),
             CounterPage(),
-            MovieListScreen(),
+            TodoListPage(),
             MessagePage(),
             AccountPage(),
           ],
