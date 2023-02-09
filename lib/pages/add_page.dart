@@ -36,7 +36,7 @@ class _AddTodoPageState extends State<AddTodoPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          isEdit ? 'Edit Movie List' : 'Add Todo',
+          isEdit ? 'Edit Movie List' : 'Add Movies',
         ),
       ),
       body: ListView(
